@@ -49,5 +49,14 @@ def añadir_contacto():
     return render_template("update.html", contactos=contactos)
 
 
+@contactos.ruta("/delete/<id>", methods=["GET"])
+def borrar(id):
+    contacto = Contacto.query.get(id)
+    db.session.delete(contacto)
+    db.session.commit()
+    
+    flash("Contacto eliminado correctamente")
+    
+    return redirect(url_for('contactos.index'))
 
-        
+
