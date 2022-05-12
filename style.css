@@ -43,17 +43,12 @@ a:hover{
   display: block;
 }
 .imagen{
-  width: 230px;
+  width: 600px;
   border-radius: 0%;
   display: left;
 }
 .imagen1{
-  width: 230px;
-  border-radius: 0%;
-  display: center;
-}
-.imagen2{
-  width: 230px;
+  width: 600px;
   border-radius: 0%;
   display: right;
 }
