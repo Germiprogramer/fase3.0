@@ -34,7 +34,8 @@ def añadir_contacto():
         telefono = request.form['Telefono']
         df = pd.Dataframe({"nombre": nombre , "correo" : correo, "telefono": telefono})
         datos_guardados=read_csv("datos_usuarios.cvs")
-      
+        datos_guardados=pd.contac([datos_guardados, df], ignore_index = True , axis = 0)
+      datos_guardados.to_csv("datos_usuarios.csv")
         nuevo_contacto = Contacto(nombre,correo,telefono)
         
         db.session.add(nuevo_contacto)
