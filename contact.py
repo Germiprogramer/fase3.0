@@ -26,4 +26,28 @@ contactos = Blueprint("contactos", __name__)
 
 @contactos.route('/')
 def index():
-    contactos = 
+    contactos = Contacto.querry.all()
+    return render_template('index.html',contactos=contactos)
+
+@contactos.ruta('/new', methods=['POST'])
+def añadir_contacto():
+    if request.method == 'Post':
+        
+        nombre = request.form['Nombre']
+        correo = request.form['Correo']
+        telefono = request.form['Telefono']
+        
+        nuevo_contacto = Contacto(nombre,correo,telefono)
+        
+        db.session.add(nuevo_contacto)
+        db.session.commit()
+        
+        flash('Contacto añadido correctamente')
+        
+        
+        return redirect(url_for('contactos.index'))
+    return render_template("update.html", contactos=contactos)
+
+
+
+        
