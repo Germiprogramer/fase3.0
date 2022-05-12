@@ -14,11 +14,7 @@ class Contacto(db.Model):
     def __init__(self,nombre, correo, telefono):
         self.nombre = nombre
         self.correo = correo
-        self.telefono = telefono
-    
-    
-    
-    
+        self.telefono = telefono  
     
         
 contactos = Blueprint("contactos", __name__)
