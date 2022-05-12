@@ -52,3 +52,18 @@ a:hover{
   border-radius: 0%;
   display: right;
 }
+.boton{
+  background-color: #876787;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  width: 200px;
+  border: 4px solid #473d47;
+  border-radius: 12px;
+  transition-duration: 0.5s;
+}
+.boton:hover{
+  background-color: #661c66;
+  color: #f540f5;
+}
