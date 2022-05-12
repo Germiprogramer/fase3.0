@@ -44,7 +44,7 @@ def añadir_contacto():
         flash('Contacto añadido correctamente')
         
         
-        return redirect(url_for('contactos.index'))
+        return redirect(url_for('index.html'))
     return render_template("update.html", contactos=contactos)
 
 
@@ -58,5 +58,5 @@ def borrar(id):
     
     flash("Contacto eliminado correctamente")
     
-    return redirect(url_for('contactos.index'))
+    return redirect(url_for('index.html'))
 
