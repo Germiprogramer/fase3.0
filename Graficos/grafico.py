@@ -33,16 +33,3 @@ grafico1 = Grafico("WineQT.csv")
 grafico1.grafico_simple("hist","quality")
 grafico1.grafico_simple("hist","residual sugar")
 
-#otra funcion para crear gráficos
-def grafico_2(dataset, tipo_grafico, titulografico, nombregrafico):
-    fig, ax = plt.subplots()
- 
-    dataset.plot(kind=tipo_grafico, ax = ax, color = "red")
-    ax.set_title(str(titulografico), loc = "center", fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:orange'})
-    ax.set_ylabel('')
-
-    plt.savefig('{}.png'.format(nombregrafico), bbox_inches='tight')
-
-    plt.show()
-
-grafico(delanteros_buenos["Goles marcados"], "hist", "Goles", "histogramagoles")
