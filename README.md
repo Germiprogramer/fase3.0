@@ -1,5 +1,19 @@
 # fase3.0
 <img width="500" alt="logotipo" src="https://user-images.githubusercontent.com/91720991/168129761-61147b84-1fe1-4c0f-a36b-3980c6ea3668.png">
+
+El link al repositorio es el siguiente: https://github.com/Germiprogramer/fase3.0.git
+
+COLABORADORES
+
+· Pelayo Huertas
+
+· Claudia Lozano
+
+· Rubén Nogueras
+
+· Jose Luis Rodríguez
+
+· Germán Llorente
 _______________________________________________________________________________________________________________________________________________________
 
 El objetivo de este trabajo es diseñar una página web a partir del dataset y de las fases anteriores del proyecto. En la ejecución de la tarea se van a tener en cuenta el diseño inicial de la página web, tratando de adaptarnos a él en la medida de la posible y usando la paleta de colores que se habá especificado.
