@@ -58,5 +58,3 @@ def borrar(id):
     flash("Contacto eliminado correctamente")
     
     return redirect(url_for('contactos.index'))
-
-
