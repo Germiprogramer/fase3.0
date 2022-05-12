@@ -32,7 +32,8 @@ def añadir_contacto():
         nombre = request.form['Nombre']
         correo = request.form['Correo']
         telefono = request.form['Telefono']
-        
+        df = pd.Dataframe({"nombre": nombre , "correo" : correo, "telefono": telefono})
+      
         nuevo_contacto = Contacto(nombre,correo,telefono)
         
         db.session.add(nuevo_contacto)
@@ -50,6 +51,8 @@ def borrar(id):
     contacto = Contacto.query.get(id)
     db.session.delete(contacto)
     db.session.commit()
+
+    
     
     flash("Contacto eliminado correctamente")
     
