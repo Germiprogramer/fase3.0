@@ -42,3 +42,18 @@ a:hover{
 .encabezado nav ul li:hover > ul{
   display: block;
 }
+.imagen{
+  width: 230px;
+  border-radius: 0%;
+  display: left;
+}
+.imagen1{
+  width: 230px;
+  border-radius: 0%;
+  display: center;
+}
+.imagen2{
+  width: 230px;
+  border-radius: 0%;
+  display: right;
+}
