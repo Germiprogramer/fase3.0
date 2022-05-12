@@ -69,3 +69,11 @@ a:hover{
   background-color: #661c66;
   color: #f540f5;
 }
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img/fondo.png);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
