@@ -5,7 +5,7 @@ El link al repositorio es el siguiente: https://github.com/Germiprogramer/fase3.
 
 COLABORADORES
 
-· Pelayo Huertas
+· Pelayo Huerta
 
 · Claudia Lozano
 
