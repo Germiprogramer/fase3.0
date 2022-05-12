@@ -32,7 +32,7 @@ def añadir_contacto():
         nombre = request.form['Nombre']
         correo = request.form['Correo']
         telefono = request.form['Telefono']
-        df = pd.Dataframe({"nombre": nombre , "correo" : correo, "telefono": telefono})
+        df = pd.Dataframe({"Nombre": nombre , "Correo" : correo, "Telefono": telefono})
         datos_guardados=read_csv("datos_usuarios.cvs")
         datos_guardados=pd.contac([datos_guardados, df], ignore_index = True , axis = 0)
       datos_guardados.to_csv("datos_usuarios.csv")
