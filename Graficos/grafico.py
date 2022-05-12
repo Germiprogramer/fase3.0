@@ -30,4 +30,5 @@ class Grafico:
         plt.savefig('img/grafico' + ' - '+ col1 + col2 + '.png', bbox_inches='tight')
 
 grafico1 = Grafico("WineQT.csv")
-grafico1.grafico("bar","")
+grafico1.grafico_simple("bar","residual sugar")
+
