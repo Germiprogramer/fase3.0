@@ -11,7 +11,7 @@ class Grafico:
 
         fig, ax = plt.subplots()
 
-        self.dt[columna].sum().plot(kind=tipo_grafico, ax=ax)
+        self.dt[columna].plot(kind=tipo_grafico, ax=ax)
 
         ax.set_title("Grafico {}".format(columna), loc = "center", fontdict = {'fontsize':14, 
         'fontweight':'bold', 'color':'tab:blue'})
@@ -30,5 +30,5 @@ class Grafico:
         plt.savefig('img/grafico' + ' - '+ col1 + col2 + '.png', bbox_inches='tight')
 
 grafico1 = Grafico("WineQT.csv")
-grafico1.grafico_simple("bar","residual sugar")
-
+grafico1.grafico_simple("hist","quality")
+grafico1.grafico_simple("hist","residual sugar")
