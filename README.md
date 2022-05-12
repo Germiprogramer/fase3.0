@@ -9,7 +9,18 @@ Para la realización de la web, vamos a distinguir las siguientes partes: encabe
 
 # Encabezado
 
+En el encabezado, hemos puesto en pequeño a la izquierda el logo de VinhOporto. Luego, hemos puesto distintos apartados con sus correspondientes subíndices: 
+
+- Inicio -> 
+- Carta -> Vinos, Calidad, Gráficos
+- Acerca de -> Nuestra bodega, Eventos
+- Contáctanos -> Reservas, Ayuda, Teléfono de Contacto
+
+El fondo del encabezado es rosa, el color corporativo que habíamos elegido en la fase 2.
+
 # Formulario
+
+El formulario incluye la opción de registrarse e iniciar sesión, siendo esta la forma convencional de inicio en una página web o aplicación.
 
 # Gráficos
 
@@ -21,5 +32,7 @@ Los gráficos han sido realizados usando los conocimientos adquiridos en los dis
 Como se puede ver, la calidad del vino está por encima de la media (5) en comparación con el resto de vinos. Además, cabe destacar que los niveles de azúcar son muy bajos, siendo esto muy positivo a nivel de salud.
 
 # Diseño final
+
+Sumado a todo lo anterior, se ha elegido un fondo relacionado con el tema, una preciosa imagen de los vinos de nuestra bodega que seduce a cualquier amante del buen vino. El resultado es el siguiente:
 
 ![Captura de pantalla 2022-05-12 191424](https://user-images.githubusercontent.com/91720991/168131977-3d314fe5-ea86-4469-9c5f-5e38cfd76036.jpg)
