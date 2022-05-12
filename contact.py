@@ -14,11 +14,7 @@ class Contacto(db.Model):
     def __init__(self,nombre, correo, telefono):
         self.nombre = nombre
         self.correo = correo
-        self.telefono = telefono
-    
-    
-    
-    
+        self.telefono = telefono  
     
         
 contactos = Blueprint("contactos", __name__)
@@ -36,7 +32,8 @@ def añadir_contacto():
         nombre = request.form['Nombre']
         correo = request.form['Correo']
         telefono = request.form['Telefono']
-        
+        df = pd.Dataframe({"nombre": nombre , "correo" : correo, "telefono": telefono})
+      
         nuevo_contacto = Contacto(nombre,correo,telefono)
         
         db.session.add(nuevo_contacto)
@@ -54,6 +51,8 @@ def borrar(id):
     contacto = Contacto.query.get(id)
     db.session.delete(contacto)
     db.session.commit()
+
+    
     
     flash("Contacto eliminado correctamente")
     

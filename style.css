@@ -42,3 +42,38 @@ a:hover{
 .encabezado nav ul li:hover > ul{
   display: block;
 }
+.imagen{
+  width: 600px;
+  border-radius: 0%;
+  display: left;
+}
+.imagen1{
+  width: 600px;
+  border-radius: 0%;
+  display: right;
+}
+.boton{
+  background-color: #876787;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  width: 200px;
+  border: 4px solid #473d47;
+  border-radius: 12px;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  
+}
+.boton:hover{
+  background-color: #661c66;
+  color: #f540f5;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img/fondo.png);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
